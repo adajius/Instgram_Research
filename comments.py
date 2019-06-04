@@ -1,16 +1,16 @@
 from InstagramAPI import InstagramAPI
 import time
 from datetime import datetime
-media_id = '1917494302427126132'#MERCY JOHNSON SALT....RESULT2
-#media_id = '1903596981109045703' MERCY JOHNSON MORNING FRESH
+media_id = '1917494302427126132'
 
 # stop conditions, the script will end when first of them will be true
 until_date = '2018-11-31'
 count = 1350
 
-API = InstagramAPI("ifyadaji", "123PASSword")
+#Replace Your_UserId with your Instagram userID, Your_password with your Instagram password and UserNameInfo with your User name info
+API = InstagramAPI("Your_UserId", "Your_password")
 API.login()
-API.getUsernameInfo("1334300193")
+API.getUsernameInfo("UserNameInfo")
 has_more_comments = True
 max_id = ''
 comments = []
